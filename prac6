@@ -1,0 +1,17 @@
+k = int(input())
+array = []
+for i in range(k):
+p = input()
+array.append(p)
+set1 = set(array)
+print(len(set1))
+array2 = []
+array3 = []
+for i in array:
+if i in array2:
+pass
+else:
+array2.append(i)
+array3.append(array.count(i))
+for i in array3:
+print(i, end=' ')
