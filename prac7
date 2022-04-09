@@ -1,0 +1,19 @@
+k = int(input())
+string = []
+for i in range(k):
+string.append(input())
+for i in range(k):
+s = str(string[i])
+s1, s2 = '', ''
+l = len(s)
+if(l % 2 == 0):
+s1 = s[:l//2]
+s2 = s[l//2:]
+else:
+s1 = s[:l//2]
+s2 = s[l//2+1:]
+CE259 20CE053
+if sorted(s1) == sorted(s2):
+print("YES")
+else:
+print("NO")
